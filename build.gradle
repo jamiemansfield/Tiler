@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+group = 'me.jamiemansfieler'
+version = '0.0.1-indev'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:23.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.1'
+}
